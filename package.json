@@ -1,0 +1,22 @@
+{
+  "name": "testing-memory",
+  "version": "1.0.0",
+  "description": "Test memory consumtion",
+  "author": "Merianos Nikos",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "dev-debug": "node --inspect node_modules/nuxt/bin/nuxt dev --port 80",
+"production-debug": "npm rebuild node-sass && nuxt build && export NODE_ENV=production && node --inspect node_modules/nuxt/bin/nuxt start --port 80"
+  },
+  "dependencies": {
+    "cross-env": "^5.2.0",
+    "nuxt": "^2.8.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.9"
+  }
+}
