@@ -2,12 +2,13 @@
   <section class="container">
     <div>
       <logo />
-      <h1 class="title">
+      <h1 class="title" v-custom1>
         testing-memory
       </h1>
       <h2 class="subtitle">
         Test memory consumtion
       </h2>
+      <n-link to="/demo-page">Demo Page</n-link>
       <div class="links">
         <a
           href="https://nuxtjs.org/"

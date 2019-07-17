@@ -50,7 +50,18 @@ module.exports = {
     ** You can extend webpack config here
     */
     extend(config, ctx) {
-      
+
+    }
+  },
+
+  render: {
+    bundleRenderer: {
+      directives: {
+        custom1: function(el, dir) {
+          el.text = 'Hello Nikos';
+          console.log(el.context.$store.state.config.name);
+        }
+      }
     }
   }
 }
